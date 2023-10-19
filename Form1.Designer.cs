@@ -54,6 +54,8 @@
             this.lbSimpleB = new System.Windows.Forms.Label();
             this.lbNameT1 = new System.Windows.Forms.Label();
             this.lbNameT2 = new System.Windows.Forms.Label();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.version001ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,7 +132,7 @@
             // btnAnotacionT1
             // 
             this.btnAnotacionT1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnAnotacionT1.BackColor = System.Drawing.Color.Blue;
+            this.btnAnotacionT1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnAnotacionT1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAnotacionT1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAnotacionT1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -257,7 +259,9 @@
             // 
             this.contactoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.créditosToolStripMenuItem,
-            this.gitHubToolStripMenuItem});
+            this.gitHubToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.version001ToolStripMenuItem});
             this.contactoToolStripMenuItem.Name = "contactoToolStripMenuItem";
             this.contactoToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.contactoToolStripMenuItem.Text = "Contacto";
@@ -265,14 +269,14 @@
             // créditosToolStripMenuItem
             // 
             this.créditosToolStripMenuItem.Name = "créditosToolStripMenuItem";
-            this.créditosToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.créditosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.créditosToolStripMenuItem.Text = "Créditos";
             this.créditosToolStripMenuItem.Click += new System.EventHandler(this.créditosToolStripMenuItem_Click);
             // 
             // gitHubToolStripMenuItem
             // 
             this.gitHubToolStripMenuItem.Name = "gitHubToolStripMenuItem";
-            this.gitHubToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.gitHubToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gitHubToolStripMenuItem.Text = "GitHub";
             this.gitHubToolStripMenuItem.Click += new System.EventHandler(this.gitHubToolStripMenuItem_Click);
             // 
@@ -328,6 +332,17 @@
             this.lbNameT2.Text = "EQUIPO B";
             this.lbNameT2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // version001ToolStripMenuItem
+            // 
+            this.version001ToolStripMenuItem.Name = "version001ToolStripMenuItem";
+            this.version001ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.version001ToolStripMenuItem.Text = "Version 0,0,1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -350,7 +365,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Scoreboard - Marcador con voz";
+            this.Text = "Scoreboard - Marcador con voz - Version Beta 0.0.1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -385,6 +400,8 @@
         private System.Windows.Forms.Label lbNameT2;
         private System.Windows.Forms.ToolStripTextBox textBoxT2;
         private System.Windows.Forms.ToolStripMenuItem gitHubToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem version001ToolStripMenuItem;
     }
 }
 
