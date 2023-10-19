@@ -142,20 +142,31 @@ namespace Scoreboard_with_voice
 
         private void reproducirVoz()
         {
+            string rutaAno = "../../audios/marcador.wav";
             string rutavalA = "../../audios/" + labelT1.Text + ".wav";
+            string rutaA = "../../audios/a.wav";
             string rutavalB = "../../audios/" + labelT2.Text + ".wav";
             
             try
             {
                 // Crear una instancia de SoundPlayer y cargar el archivo MP3
+                SoundPlayer anotacion = new SoundPlayer(rutaAno);
                 SoundPlayer marcador1 = new SoundPlayer(rutavalA);
+                SoundPlayer a = new SoundPlayer(rutaA);
                 SoundPlayer marcador2 = new SoundPlayer(rutavalB);              
                 // Reproducir el archivo MP3
+                
+                anotacion.Play();
+                anotacion.PlaySync();
                 marcador1.Play();
                 marcador1.PlaySync();
+                a.Play(); 
+                a.PlaySync();
                 marcador2.Play();
                 marcador2.PlaySync();
+                anotacion.Dispose();
                 marcador1.Dispose();
+                a.Dispose();
                 marcador2.Dispose();
             }
             catch (Exception ex)
