@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Scoreboard_with_voice
 {
@@ -38,6 +39,7 @@ namespace Scoreboard_with_voice
             if (validaAnotacionMax(mt1)){
                 mt1++;
                 labelT1.Text = mt1.ToString();
+                reproducirVoz();
             }
         }
 
@@ -59,6 +61,7 @@ namespace Scoreboard_with_voice
             {
                 mt2++;
                 labelT2.Text = mt2.ToString();
+                reproducirVoz();
             }
         }
 
@@ -134,6 +137,37 @@ namespace Scoreboard_with_voice
             return validado;
         }
 
+
+
+        private void reproducirVoz()
+        {
+            string rutavalA = "../../audios/" + labelT1.Text + ".wav";
+            string rutavalB = "../../audios/" + labelT2.Text + ".wav";
+            
+            try
+            {
+                // Crear una instancia de SoundPlayer y cargar el archivo MP3
+                SoundPlayer marcador1 = new SoundPlayer(rutavalA);
+                SoundPlayer marcador2 = new SoundPlayer(rutavalB);
+
+                // Reproducir el archivo MP3
+                marcador1.Play();
+                marcador1.PlaySync();
+                marcador2.Play();
+                marcador2.PlaySync();
+                marcador1.Dispose();
+                marcador2.Dispose();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al reproducir audio" + ex.Message);
+            }
+
+
+            
+
+        }
+
         #endregion
 
         #region MENU STRIP
@@ -174,17 +208,17 @@ namespace Scoreboard_with_voice
             lbNameT2.Text = textBoxT2.Text;
         }
 
-
-        #endregion
-
         private void créditosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Desarrollado por ACO-626, EMAIL ocampoalejadro.oc@gmail.com","CONTACTO");
+            MessageBox.Show("Desarrollado por ACO-626, EMAIL ocampoalejadro.oc@gmail.com", "CONTACTO");
         }
 
         private void gitHubToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start(urlGit);
         }
+        #endregion
+
+
     }
 }
