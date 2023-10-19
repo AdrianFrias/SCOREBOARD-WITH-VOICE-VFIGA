@@ -1,0 +1,10 @@
+A:\ACO-SOFTWARE\ACO-SOFTWARE\Scoreboard with voice\bin\Debug\Scoreboard with voice.exe.config
+A:\ACO-SOFTWARE\ACO-SOFTWARE\Scoreboard with voice\bin\Debug\Scoreboard with voice.exe
+A:\ACO-SOFTWARE\ACO-SOFTWARE\Scoreboard with voice\bin\Debug\Scoreboard with voice.pdb
+A:\ACO-SOFTWARE\ACO-SOFTWARE\Scoreboard with voice\obj\Debug\Scoreboard with voice.csproj.AssemblyReference.cache
+A:\ACO-SOFTWARE\ACO-SOFTWARE\Scoreboard with voice\obj\Debug\Scoreboard_with_voice.Form1.resources
+A:\ACO-SOFTWARE\ACO-SOFTWARE\Scoreboard with voice\obj\Debug\Scoreboard_with_voice.Properties.Resources.resources
+A:\ACO-SOFTWARE\ACO-SOFTWARE\Scoreboard with voice\obj\Debug\Scoreboard with voice.csproj.GenerateResource.cache
+A:\ACO-SOFTWARE\ACO-SOFTWARE\Scoreboard with voice\obj\Debug\Scoreboard with voice.csproj.CoreCompileInputs.cache
+A:\ACO-SOFTWARE\ACO-SOFTWARE\Scoreboard with voice\obj\Debug\Scoreboard with voice.exe
+A:\ACO-SOFTWARE\ACO-SOFTWARE\Scoreboard with voice\obj\Debug\Scoreboard with voice.pdb
