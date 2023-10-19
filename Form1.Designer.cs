@@ -265,14 +265,14 @@
             // créditosToolStripMenuItem
             // 
             this.créditosToolStripMenuItem.Name = "créditosToolStripMenuItem";
-            this.créditosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.créditosToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.créditosToolStripMenuItem.Text = "Créditos";
             this.créditosToolStripMenuItem.Click += new System.EventHandler(this.créditosToolStripMenuItem_Click);
             // 
             // gitHubToolStripMenuItem
             // 
             this.gitHubToolStripMenuItem.Name = "gitHubToolStripMenuItem";
-            this.gitHubToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gitHubToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.gitHubToolStripMenuItem.Text = "GitHub";
             this.gitHubToolStripMenuItem.Click += new System.EventHandler(this.gitHubToolStripMenuItem_Click);
             // 
@@ -295,7 +295,7 @@
             this.lbSimpleB.AutoSize = true;
             this.lbSimpleB.Font = new System.Drawing.Font("Arial Black", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSimpleB.ForeColor = System.Drawing.Color.White;
-            this.lbSimpleB.Location = new System.Drawing.Point(1147, 259);
+            this.lbSimpleB.Location = new System.Drawing.Point(1160, 259);
             this.lbSimpleB.Name = "lbSimpleB";
             this.lbSimpleB.Size = new System.Drawing.Size(92, 95);
             this.lbSimpleB.TabIndex = 11;

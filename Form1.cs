@@ -36,11 +36,12 @@ namespace Scoreboard_with_voice
 
         private void btnAnotacionT1_Click(object sender, EventArgs e)
         {
-            if (validaAnotacionMax(mt1)){
+            if (validaAnotacionMax(mt1)){               
                 mt1++;
                 labelT1.Text = mt1.ToString();
-                reproducirVoz();
+                reproducirVoz();             
             }
+            
         }
 
 
@@ -148,8 +149,7 @@ namespace Scoreboard_with_voice
             {
                 // Crear una instancia de SoundPlayer y cargar el archivo MP3
                 SoundPlayer marcador1 = new SoundPlayer(rutavalA);
-                SoundPlayer marcador2 = new SoundPlayer(rutavalB);
-
+                SoundPlayer marcador2 = new SoundPlayer(rutavalB);              
                 // Reproducir el archivo MP3
                 marcador1.Play();
                 marcador1.PlaySync();
